@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - apt-tools
+dependencies:
+  - python
+  - jupyterlab
+  - ipywidgets
+  - ipython
+  - paraprobe
+  - pyiron_base
+  - pip:
+    - jupyterlab-h5web
