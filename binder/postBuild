@@ -1,0 +1,2 @@
+# move pyiron config to home directory 
+mv .binder/.pyiron .
