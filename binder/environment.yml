@@ -8,5 +8,21 @@ dependencies:
   - ipython
   - paraprobe
   - pyiron_base
+  - numpy
+  - matplotlib
+  - pytest
+  - pandas
+  - numba
+  - h5py
+  - scikit-learn
+  - tqdm
+  - pyevtk
+  - ipywidgets
+  - pyyaml
+  - ipyvtklink
+  - pyvista
+  - panel
+  - jupyterlab-h5web
   - pip:
-    - jupyterlab-h5web
+    - compositionspace
+    
