@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python
   - jupyterlab
-  - ipywidgets
+  - ipywidgets =7
   - ipython
   - paraprobe
   - pyiron_base
@@ -17,7 +17,6 @@ dependencies:
   - scikit-learn
   - tqdm
   - pyevtk
-  - ipywidgets
   - pyyaml
   - ipyvtklink
   - pyvista
