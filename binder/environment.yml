@@ -1,3 +1,4 @@
+name: apt
 channels:
   - conda-forge
   - apt-tools
