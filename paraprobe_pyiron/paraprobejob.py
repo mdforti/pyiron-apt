@@ -76,11 +76,11 @@ class ParaprobeRanger(GenericJob):
     
     def _configure_transcoder(self):
         transcoder = ParmsetupTranscoder()
-        transcoder.add_task()
-        transcoder.set_reconstruction_filename(self._pos_file)
-        transcoder.set_ranging_filename(self._rrng_file)
-        transcoder.commit_task()
-        self._transcoder_config = transcoder.configure(self.jobid)
+        self._transcoder_config = transcoder.load_reconstruction_and_ranging(
+        working_directory=self.working_directory,
+        reconstructed_dataset=self._pos_file,
+        ranging_definitions=self._rrng_file,
+        jobid=self.jobid)
         
     def _execute_transcoder(self):
         transcoder = ParaprobeTranscoder(self._transcoder_config)
