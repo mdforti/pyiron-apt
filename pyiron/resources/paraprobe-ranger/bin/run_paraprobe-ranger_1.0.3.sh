@@ -1,3 +1,3 @@
 #!/bin/bash
-exec lmp_serial -in control.inp;
+paraprobe_ranger 636502001 PARAPROBE.Ranger.Config.SimID.636502001.nxs > log.out;
 
