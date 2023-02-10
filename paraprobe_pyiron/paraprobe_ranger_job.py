@@ -158,10 +158,11 @@ class ParaprobeRanger(GenericJob):
         config_transcoder_log = self._read_temporary_output_file("config_transcoder.log", clean=False)
         execute_transcoder_log = self._read_temporary_output_file("execute_transcoder.log", clean=False)
         config_ranger_log = self._read_temporary_output_file("config_ranger.log", clean=False)
+        execute_ranger_log = self._read_temporary_output_file("log.out", clean=False)
         self.output["log/configure/transcoder"] = config_transcoder_log
         self.output["log/execute/transcoder"] = execute_transcoder_log
         self.output["log/configure/ranger"] = config_ranger_log
-        self.output["log/execute/ranger"] = ""
+        self.output["log/execute/ranger"] = execute_ranger_log
         
     @_pipe_output_to_file("result_ranger.log")
     def _collect_ranger_results(self):
@@ -211,10 +212,56 @@ class ParaprobeRanger(GenericJob):
                     "year": "2022",
                     "doi": "10.48550/arXiv.2205.13510",
                     "url": "https://doi.org/10.48550/arXiv.2205.13510",
-                    "author": ["Markus Kühbach", "Vitor Vieira Rielli", 
-                               "Sophie Primig", "Alaukik Saxena", "David Mayweg",
-                               "Benjamin Jenkins", "Stoichkov Antonov", "Alexander Reichmann",
-                               "Stefan Kardos", "Lorenz Romaner", "Sandor Brockhauser"],
-                }
+                    "author": ["M. Kühbach", "V. V. Rielli", 
+                               "S. Primig", "A. Saxena", "D. Mayweg",
+                               "B. Jenkins", "S. Antonov", "A. Reichmann",
+                               "S. Kardos", "L. Romaner", "S. Brockhauser"],
+                },
+                {
+                    "title": "On Strong Scaling Open Source Tools for Mining Atom Probe Tomography Data",
+                    "journal": "Microscopy and Microanalysis",
+                    "volume": "25",
+                    "number": "1",
+                    "year": "2019",
+                    "doi": "10.1017/S1431927619002228",
+                    "url": "https://doi.org/10.1017/S1431927619002228",
+                    "author": ["M. Kühbach", "P. Bajaj", 
+                               "A. Breen", "E. A. Jägle", "B. Gault"],
+                }, 
+                {
+                    "title": "On strong-scaling and open-source tools for analyzing atom probe tomography data",
+                    "journal": "npj Computational Materials",
+                    "volume": "7",
+                    "number": "21",
+                    "year": "2021",
+                    "doi": "10.1038/s41524-020-00486-1",
+                    "url": "https://doi.org/10.1038/s41524-020-00486-1",
+                    "author": ["M. Kühbach", "P. Bajaj", 
+                               "H. Zhao", "M. H. Çelik", "E. A. Jägle",
+                               "B. Gault"],
+                }, 
+                {
+                    "title": "Community-Driven Methods for Open and Reproducible Software Tools for Analyzing Datasets from Atom Probe Microscopy",
+                    "journal": "Microscopy and Microanalysis",
+                    "volume": "1",
+                    "number": "1",
+                    "year": "2021",
+                    "doi": "10.1017/S1431927621012241",
+                    "url": "https://doi.org/10.1017/S1431927621012241",
+                    "author": ["M. Kühbach", "A. J. London", 
+                               "J. Wang", "D. K. Schreiber", "F. Mendez-Martin",
+                               "I. Ghamarian", "H. Bilal", "A. V.Ceguerra"],
+                }, 
+                {
+                    "title": "Open and strong-scaling tools for atom-probe crystallography: high-throughput methods for indexing crystal structure and orientation",
+                    "journal": "Journal of Applied Crystallography",
+                    "volume": "52",
+                    "number": "1",
+                    "year": "2021",
+                    "doi": "10.1107/S1600576721008578",
+                    "url": "https://doi.org/10.1107/S1600576721008578",
+                    "author": ["M. Kühbach", "M. Kasemer", 
+                               "A. Breen", "B. Gault"],
+                }, 
             ]
         }
