@@ -36,7 +36,7 @@ Do the pre-setup for pyiron
 ```
 mv binder/.pyiron ~/
 mkdir ~/pyiron
-cp -rf binder/pyiron/resources ~/pyiron/
+cp -rf pyiron/resources ~/pyiron/
 ```
 
 You might need do `chmod u+x filename` for the files in the `pyiron/resources/paraprobe-ranger/bin` folder.
