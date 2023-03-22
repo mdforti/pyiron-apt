@@ -20,8 +20,12 @@ class ParaprobeDistancer(ParaprobeBase):
         self.ranger_job = None
         self.surfacer_job = None
         self._distancer_config = None
+        self._skip_copy_results = False
         
     def _copy_results(self):
+        if self._skip_copy_results:
+            return
+
         if self.ranger_job is None:
             raise ValueError("Needs a ranger job!")
         

@@ -24,8 +24,12 @@ class ParaprobeNanochem(ParaprobeBase):
         self.distancer_job = None
         self.ranger_job = None
         self._nanochem_config = None
+        self._skip_copy_results = False
         
     def _copy_results(self):
+        if self._skip_copy_results:
+            return
+
         if self.ranger_job is None:
             raise ValueError("Needs a ranger job!")
         if self.surfacer_job is None:

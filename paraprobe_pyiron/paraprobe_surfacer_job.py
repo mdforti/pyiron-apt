@@ -19,8 +19,12 @@ class ParaprobeSurfacer(ParaprobeBase):
         super().__init__(project, job_name)
         self.ranger_job = None
         self._surfacer_config = None
+        self._skip_copy_results = False
         
     def _copy_results(self):
+        if self._skip_copy_results:
+            return
+        
         if self.ranger_job is None:
             raise ValueError("Needs a ranger job!")
         
