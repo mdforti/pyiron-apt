@@ -18,6 +18,7 @@ class ParaprobeDistancer(ParaprobeBase):
     def __init__(self, project, job_name):
         super().__init__(project, job_name)
         self.ranger_job = None
+        self.surfacer_job = None
         self._distancer_config = None
         
     def _copy_results(self):
@@ -28,6 +29,9 @@ class ParaprobeDistancer(ParaprobeBase):
         self._copy_file(os.path.join(self.ranger_job.working_directory, self.ranger_job._transcoder_results))
         self._copy_file(os.path.join(self.ranger_job.working_directory, self.ranger_job._ranger_config))
         self._copy_file(os.path.join(self.ranger_job.working_directory, self.ranger_job._ranger_results))
+        self._copy_file(os.path.join(self.surfacer_job.working_directory, self.surfacer_job._surfacer_config))
+        self._copy_file(os.path.join(self.surfacer_job.working_directory, self.surfacer_job._surfacer_results))
+        
     
     @_change_directory
     @_pipe_output_to_file("config_distancer.log")

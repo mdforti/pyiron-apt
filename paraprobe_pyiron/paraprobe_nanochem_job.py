@@ -57,7 +57,7 @@ class ParaprobeNanochem(ParaprobeBase):
                 dataset_name_vertices='/entry/process0/point_set_wrapping0/alpha_complex/triangle_set/triangles/vertices',
                 dataset_name_facet_indices='/entry/process0/point_set_wrapping0/alpha_complex/triangle_set/triangles/faces')    
         dataset.load_ion_to_edge_distances(
-                file_name=os.path.join(self.working_directory, 'PARAPROBE.Distancer.Results.SimID.63650200.h5'),
+                file_name=os.path.join(self.working_directory, 'PARAPROBE.Distancer.Results.SimID.636502001.h5'),
                 dataset_name='/entry/process0/point_to_triangle_set/distance')        
         
         task = Delocalization()
