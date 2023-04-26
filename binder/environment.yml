@@ -1,7 +1,6 @@
 name: apt
 channels:
   - conda-forge
-  - apt-tools
 dependencies:
   - python =3.9
   - jupyterlab
