@@ -11,7 +11,7 @@ with ImportAlarm(
     "paraprobe functionality requires the `paraprobe` module (and its dependencies) specified as extra"
     "requirements. Please install it and try again."
 ) as paraprobe_alarm:
-    from paraprobe_parmsetup.tools.surfacer_guru import ParmsetupSurfacer
+    from paraprobe_parmsetup.surfacer_guru import ParmsetupSurfacer
     
 
 class ParaprobeSurfacer(ParaprobeBase):

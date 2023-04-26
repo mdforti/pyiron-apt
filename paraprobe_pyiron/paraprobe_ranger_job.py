@@ -11,8 +11,8 @@ with ImportAlarm(
     "paraprobe functionality requires the `paraprobe` module (and its dependencies) specified as extra"
     "requirements. Please install it and try again."
 ) as paraprobe_alarm:
-    from paraprobe_parmsetup.tools.transcoder_guru import ParmsetupTranscoder
-    from paraprobe_parmsetup.tools.ranger_guru import ParmsetupRanger
+    from paraprobe_parmsetup.transcoder_guru import ParmsetupTranscoder
+    from paraprobe_parmsetup.ranger_guru import ParmsetupRanger
     from paraprobe_transcoder.paraprobe_transcoder import ParaprobeTranscoder
     from paraprobe_autoreporter.wizard.ranger_report import AutoReporterRanger
     

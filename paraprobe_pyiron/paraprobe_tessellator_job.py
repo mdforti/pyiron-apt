@@ -26,7 +26,7 @@ with ImportAlarm(
     "paraprobe functionality requires the `paraprobe` module (and its dependencies) specified as extra"
     "requirements. Please install it and try again."
 ) as paraprobe_alarm:
-    from paraprobe_parmsetup.tools.tessellator_guru import ParmsetupTessellator
+    from paraprobe_parmsetup.tessellator_guru import ParmsetupTessellator
     from paraprobe_autoreporter.wizard.tessellator_report import AutoReporterTessellator
 
 class ParaprobeTessellator(ParaprobeBase):

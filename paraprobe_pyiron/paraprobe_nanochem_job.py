@@ -13,9 +13,9 @@ with ImportAlarm(
     "paraprobe functionality requires the `paraprobe` module (and its dependencies) specified as extra"
     "requirements. Please install it and try again."
 ) as paraprobe_alarm:
-    from paraprobe_parmsetup.tools.nanochem_guru import ParmsetupNanochem, NanochemTask, Delocalization
+    from paraprobe_parmsetup.nanochem_guru import ParmsetupNanochem, NanochemTask, Delocalization
     from paraprobe_autoreporter.wizard.nanochem_report import AutoReporterNanochem
-    from paraprobe_parmsetup.tools.utils.numerics import EPSILON
+    from paraprobe_parmsetup.utils.numerics import EPSILON
     
 class ParaprobeNanochem(ParaprobeBase):
     def __init__(self, project, job_name):

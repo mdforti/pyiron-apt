@@ -118,7 +118,7 @@ class CompositionSpace(GenericJob):
         
         self._post.DBSCAN_clustering(self._comp.voxel_centroid_output_file, 
                         cluster_id = self.input.cluster_id,
-                        plot=self.input.plot, plot3d=self.input.plot3d, save=False)
+                        plot=self.input.plot, plot3d=self.input.plot3d, save=True)
 
     def plot3d(self, **kwargs):
         if self._comp is None:
