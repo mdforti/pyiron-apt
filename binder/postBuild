@@ -2,3 +2,11 @@
 mv binder/.pyiron .
 chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-ranger_1.0.3_mpi.sh
 chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-ranger_1.0.3.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-distancer_1.0.3_mpi.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-distancer_1.0.3.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-surfacer_1.0.3_mpi.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-surfacer_1.0.3.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-tessellator_1.0.3_mpi.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-tessellator_1.0.3.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-nanochem_1.0.3_mpi.sh
+chmod u+x pyiron/resources/paraprobe-ranger/bin/run_paraprobe-nanochem_1.0.3.sh
